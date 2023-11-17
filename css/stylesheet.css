@@ -1,0 +1,158 @@
+h1{
+    color: #dce1de;
+    font-family: Montserrat;
+}
+
+h2{
+    color: #1f2421;
+    padding-left: 1vh;
+}
+
+h3{
+    color: #1f2421;
+    padding-left: 1vh;
+}
+
+p{
+    color: #1f2421;
+    padding-left: 1vh;
+}
+
+a{
+    color: #49a078;
+}
+
+nav{
+    text-align: justify;
+    padding-bottom: 30px;
+    margin-bottom: 1vw;
+    position: sticky;
+    font-size: 16pt;
+    background-color: #206869;
+}
+
+nav a{
+    color: #bff0cb;
+    font-family: Montserrat;
+    float: right;
+    padding-right: 15px;
+}
+
+header{
+    background-color: #206869;
+    padding: 20px;
+}
+
+/*Used a light background color for body so its easy to read the text*/
+body{
+    background-color: #dce1de;
+    margin: 2vw;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+/*Limits the size of all images and sets them to a fitting size.*/
+img{
+    width: 80vw;
+    max-width: 80vw;
+    min-width: 5vw;
+}
+
+/*Aligns elements in class to the middle of the page. Display: block sets the element on a new line.*/
+.img-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*Provides padding equal to a set viewwidth and aligns the text for the footer.*/
+footer{
+    text-align: right;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    background-color: #206869;
+}
+
+footer p{
+    color: #dce1de;
+}
+
+.fig-text{
+    font-size: 8pt;
+    font-style: italic;
+    padding-left: 5vw;
+}
+
+/*To make the text bold, to make the test more visible or stand out*/
+.paragraph-emph{
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+#logo{
+    max-width: 150px;
+    float: left;
+    margin-left: 1vw;
+}
+
+/*https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp*/
+/*white-space: nowrap; makes the pictures stay on one horizontal line*/
+/*overflow: auto; enables you to scroll through pictures by adding scrollbar when the pictures take up too much space*/
+div.scroll-container{
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    padding-bottom: none;
+}
+  
+div.scroll-container img{
+    padding: 10px;
+}
+
+/*https://www.w3schools.com/howto/howto_css_dividers.asp*/
+/*Solid border between sections on the page that makes it easier to read*/
+hr.divider{
+    border-top: 3px solid #9CC5A1;
+}
+
+/*https://www.w3schools.com/howto/howto_js_image_grid.asp*/
+/*Flex makes the pictures stand by each other on one line, and not vertically*/
+.grid-pictures{
+    display: flex;
+}
+/*Each element takes up 30% of the space*/
+.column {
+    flex: 30%;
+}
+/*Margin makes space between the text and the picturegrid*/
+.column img{
+    margin-top: 15px;
+    width: 30vw;
+}
+
+/*https://www.w3schools.com/howto/howto_css_coupon.asp*/
+.coupon {
+  border: 5px dotted #bbb; /*dotted border to make it look and feel more like a real coupon*/
+  width: 80%;
+  border-radius: 15px; /*rounded corners*/
+  margin: 0 auto; /*centers the coupon */
+  max-width: 600px;
+  margin-bottom: 2vw;
+}
+
+.container {
+  padding: 2px 16px;
+  border-radius: 5px;
+  background-color: #f1f1f1; /*changed container color to stand out from body color*/
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire { /*made the expiration text red to make it stand out so the readers pay attention to the date*/
+  color: red;
+}

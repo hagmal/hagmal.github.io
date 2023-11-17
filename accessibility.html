@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Accessibility</title>
+        <meta name="description" content="Page about accessibility related to our page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Header containing navigation links to other pages on the website, easily accessible on the top and sectioned off with contrast color-->
+        <header>
+            <h1>
+                Accessibility
+            </h1>
+            <nav>
+                <a href="index.html">Main</a>
+                <a href="accessibility.html">Accessibility</a>
+                <a href="topical.html">Thinking</a>
+                <a href="canteen.html">The P35 Canteen</a>
+            </nav>
+        </header>
+        <main>
+            <h2>
+                Accessibility-test
+            </h2>
+            <p>
+                We tested our website using the Lighthouse extension in Google. 
+            </p>
+            <h3>
+                First lighthouse-test
+            </h3> 
+            <!--https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp-->
+            <!--added this scroll container so people can decide if they want to review the pictures or keep scrolling-->
+            <div class="scroll-container">
+                <img src="media/accessibility-1.webp" alt="Accessibility-test score">
+                <img src="media/accessibility-2.webp" alt="Comment on that we need to have explicit width and height on images">
+                <img src="media/accessibility-3.webp" alt="HTML element does not have a lang attribute">
+                <img src="media/accessibility-4.webp" alt="Document does not have a meta description">
+            </div> 
+            <p class="fig-text">
+                Photo: Screenshots of lighthouse-test
+            </p>
+            <p>
+                The first test told us that the images needed explicit width and height, but our images have relative size. 
+                It also said that the HTML element did not have a “lang” element. We did have that, but it was placed in “head”. 
+                We therefore changed it and placed it in the HTML tag. At SEO we scored 90 because we did not have a meta description. 
+                SEO stands for “search engine optimization” and this means to increase visibility in Google, Microsoft Bing etc. 
+                We thought that SEO would have a low score because we have used lorem ipsum in some of the pages, but that does not seem to be the case.
+            </p>
+            <h3>
+                Second lighthouse-test 
+            </h3>  
+            <!--https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp-->
+            <!--added this scroll container so people can decide if they want to review the pictures or keep scrolling-->
+            <div class="scroll-container">
+                <img src="media/accessibility-5.webp" alt="Accessibility-test score in desktop-mode">
+                <img src="media/accessibility-7.webp" alt="Accessibility-test score in mobile-mode">
+            </div>
+            <p class="fig-text">
+                Photo: Screenshots of lighthouse-test, in both desktop-mode and mobile-mode.
+            </p>
+            <p>
+                 In the second test we tested both with desktop- and mobile-mode. We still have the problems with width and height on pictures. 
+                But at the mobile-mode-test we have received lower in performance than in the desktop-mode. The reason for this is that we have elements 
+                on our website that makes the page load slower, among other things the image-sizing. We therefore tried to change our images from JPEG and PNG to WebP, 
+                which made the performance-score better in mobile-mode and even better in desktop-mode, as you can see in the pictures below. We asked the TA’s about “eliminate render-blocking resources” and they 
+                told us that it is not in the syllabus, therefore we did not do anything about that.
+            </p>
+            <h3>
+                Third lighthouse-test 
+            </h3>  
+            <!--https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp-->
+            <!--added this scroll container so people can decide if they want to review the pictures or keep scrolling--> 
+            <div class="scroll-container">
+                <img src="media/accessibility-8.webp" alt="Accessibility-test score in mobile-mode">
+                <img src="media/accessibility-9.webp" alt="Accessibility-test score in desktop-mode">
+            </div>
+            <p class="fig-text">
+                Photo: Screenshot of lighthouse-test in mobile-mode and desktop-mode
+            </p>
+            <!--https://www.w3schools.com/howto/howto_css_dividers.asp-->
+            <!--Creates a line to divide the different sections, makes it easier to see what text belongs where-->
+            <hr class="divider">  
+            <h2>
+                Coding choices
+            </h2>
+            <p>
+                We used a website called coolors.co to create a color-palette for our website. This palette has a good mixture of colors that we feel will fit our website 
+                and distinguish our design. Moreover, the color-palette provide good visibility and contrast which makes the website user-friendly. At coolors.co we can also 
+                see what the colors will look like for those who suffer from color blindness. Because the theme for this exam is OsloMet, the color green is suitable. 
+                The color green symbolizes progress, hope, youth and harmony, which is something that we think OsloMet is representing. 
+            </p>  
+            <p>
+                Our main page gives an introduction to our website. With a big picture of the OsloMet-campus, the reader will know what the theme of the website is. 
+                At the bottom of the page we have a picture-roll. The thought behind this was to be able to show more pictures, but with minimal space. That way the reader 
+                can chose for themselves if they want to scroll through the pictures or not. The same goes for our “Accessibility” page. The pages “The P35 canteen” and “Accessibility” 
+                has the same design as the front page, to show the connection between the pages on the website. 
+            </p>
+            <!--https://coolors.co/1f2421-216869-49a078-9cc5a1-dce1de-->
+            <img class="img-wrapper" src="media/color-palette.webp" alt="Picture of our chosen color palette">
+            <p class="fig-text">
+                Photo: Coolors 
+            </p>
+            <img class="img-wrapper" src="media/color-blindness-palette.webp" alt="What our color palette looks like with color blindness">
+            <p class="fig-text">
+                Photo: Coolors 
+            </p>
+        </main>
+        <!--inserted a footer that makes a contrast to body which makes it easier to find useful information with school logo and student numbers-->
+        <footer>
+            <img id="logo" src="media/oslomet-logo.png" alt="OsloMet logo">
+            <!--Added a class to this p element to make the text bold so it is easier to see what information is to come-->
+            <p class="paragraph-emph">Kandidatnr: </p>
+            <p>Student 383</p>
+            <p>Student 166</p>
+            <p>Student 200</p>
+        </footer>                      
+    </body>
+</html>
